@@ -12,9 +12,13 @@ body {
 }
 
 .nav::after {
-  @apply content-[''] bg-white h-[4px] w-[0%] left-0 bottom-[-5px] absolute duration-300;
+  @apply content-[''] bg-white h-[4px] w-[0%] left-0 bottom-[-6px] absolute duration-300;
 }
 
 .nav:hover::after {
   @apply w-[100%];
+}
+
+.nav.underlineActive {
+  @apply content-[''] bg-white h-[4px] w-[0%] left-0 bottom-[-6px] absolute duration-300;
 }
